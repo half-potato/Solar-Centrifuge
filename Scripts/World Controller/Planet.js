@@ -9,6 +9,10 @@ public class Planet(size, color, type, position) {
   this.gravity = size * 9.55;
 
   function getForceVector(otherPosition) {
-    var
+    var outputVector = new Vector3(0, 0, 0);
+    outputVector.x = position.x - otherPosition.x;
+    outputVector.y = position.y - otherPosition.y;
+    outputVector.setLength(outputVector.length / gravity);
+    return outputVector;
   }
 }
