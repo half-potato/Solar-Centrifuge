@@ -5,7 +5,7 @@ var rotate = 100;
 var currentRotation:float;
 
 function Start () {
-	currentRotation = 0;
+	currentRotation = 90;
 }
 
 function Update () {
