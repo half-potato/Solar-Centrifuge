@@ -1,22 +1,22 @@
 ﻿#pragma strict
 
 public var thrust = 1000;
-var rotate = 100;
+var rotate:int = 90;
+var rotationSpeed:int = 100;
 var currentRotation:float;
+var yVelocity:int;
 
 function Start () {
 	currentRotation = 90;
 }
 
 function Update () {
-	var yVelocity = Input.GetAxis("Vertical")*thrust*Time.deltaTime; 
-	var rotatetion:int = Input.GetAxis("Horizontal")*rotate*Time.deltaTime;
-	
-	Debug.Log(transform.forward * yVelocity);
+	yVelocity += Input.GetAxis("Vertical")*Time.deltaTime*thrust; 
+	rotate += Input.GetAxis("Horizontal")*rotationSpeed*Time.deltaTime;
 	
 	rigidbody2D.AddForce(transform.right * yVelocity);
 	
-	currentRotation+=rotatetion;
+	currentRotation+=rotate;
 	
-	rigidbody2D.transform.rotation = Quaternion.Euler ( 360 , 180, currentRotation);
+	rigidbody2D.transform.rotation = Quaternion.Euler (0 , 180, rotate);
 }
