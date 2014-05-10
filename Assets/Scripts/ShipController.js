@@ -11,7 +11,11 @@ function Start () {
 function Update () {
 	var yVelocity = Input.GetAxis("Vertical")*thrust*Time.deltaTime; 
 	var rotatetion:int = Input.GetAxis("Horizontal")*rotate*Time.deltaTime;
+<<<<<<< HEAD:Assets/Scripts/ShipController.js
 
+=======
+	
+>>>>>>> FETCH_HEAD:Assets/Scripts/ShipController/ShipController.js
 	rigidbody2D.AddForce(transform.right * yVelocity);
 	
 	currentRotation+=rotatetion;

@@ -1,6 +1,6 @@
 var NEWTONS_PER_UNIT : int = 9.55;
 
-public class Planet {
+public class Planets {
 
 	var size : int;
 	var color : Vector3;
@@ -8,7 +8,7 @@ public class Planet {
 	var position : Vector2;
 	var gravity : int;
 
-	function Planet(size, color, type, position) {
+	function Planets(size, color, type, position) {
 		this.size = size;
 		this.color = color;
 		this.type = type;
@@ -18,7 +18,7 @@ public class Planet {
 	}
 
 	function getForceVector(otherPosition) {
-		var outputVector = new Vector3(0, 0, 0);
+		var outputVector = new Vector2(0, 0);
 		outputVector.x = position.x - otherPosition.x;
 		outputVector.y = position.y - otherPosition.y;
 		outputVector.setLength(outputVector.length / gravity);
