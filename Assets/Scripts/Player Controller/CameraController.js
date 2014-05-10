@@ -1,7 +1,8 @@
 ﻿#pragma strict
 
 var ship : GameObject;
+var offset : Vector3 = new Vector3(0, 1, 1);
 
 void Update() {
-	Transform.position = ship.transform.position;
+	transform.position = ship.transform.position + offset;
 }
