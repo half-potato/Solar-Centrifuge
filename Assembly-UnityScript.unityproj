@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraController.js" />
+     <Compile Include="Assets\Scripts\DestroyOverlap.js" />
      <Compile Include="Assets\Scripts\FlameCheck.js" />
      <Compile Include="Assets\Scripts\MousePointer.js" />
      <Compile Include="Assets\Scripts\Planet Gen.js" />

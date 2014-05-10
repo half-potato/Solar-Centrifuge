@@ -1,10 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\World Controller\PlanetGravity.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Planet Gen.js">
     <Files>
-      <File FileName="Assets\Scripts\Player Controller\CameraController.js" Line="5" Column="22" />
-      <File FileName="Assets\Scripts\World Controller\PlanetGravity.js" Line="7" Column="28" />
-      <File FileName="Assets\Scripts\ShipController\ShipController.js" Line="13" Column="72" />
+      <File FileName="Assets\Scripts\Planet Gen.js" Line="13" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

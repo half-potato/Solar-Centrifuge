@@ -7,7 +7,9 @@ function Start () {
 		var position = Vector2(Random.Range(-1500,1500), Random.Range(-1500,1500));
 
 		var newPlanet = Instantiate (planet, position, Quaternion.identity);
+	
 		var scaleAmount = Random.Range (30,50);
 		newPlanet.transform.localScale += Vector3(scaleAmount, scaleAmount, scaleAmount);
+		
 	}
 }
