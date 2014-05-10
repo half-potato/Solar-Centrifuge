@@ -12,11 +12,7 @@ function Update () {
 	var yVelocity = Input.GetAxis("Vertical")*thrust*Time.deltaTime; 
 	var rotate:int = Input.GetAxis("Horizontal")*rotate*Time.deltaTime;
 	
-	var speed:Vector3 = new Vector3(yVelocity,yVelocity,yVelocity);
-	
-	speed =  transform.rotation * speed;
-	Debug.Log(speed);
-	rigidbody2D.AddForce (speed*Time.deltaTime);
+	rigidbody2D.AddForce(transform.forward * yVelocity*-1);
 	
 	currentRotation+=rotate;
 	
