@@ -21,12 +21,12 @@ function truncate(number) {
 
 function Update () {
 	gravityDirection = transform.position - ship.transform.position;
-	gravityForce = Vector2(gravityStrength / gravityDirection.x, gravityStrength / gravityDirection.y);
-	ship.rigidbody2D.AddForce(gravityForce);
 	quadrant = truncate(gravityDirection.x) + truncate(gravityDirection.x) + truncate(gravityDirection.y);
 	switch (quadrant) {
 		case 3: 
 			//Quadrant 1, to the left and down
+			gravityForce = Vector2(gravityStrength / gravityDirection.x, gravityStrength / gravityDirection.y);
+			ship.rigidbody2D.AddForce(gravityForce);
 			break;
 		case -1: 
 			//Quadrant 2, to the right and down
