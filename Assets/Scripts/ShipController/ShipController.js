@@ -16,5 +16,5 @@ function Update () {
 	
 	currentRotation+=rotate;
 	
-	rigidbody2D.transform.rotation = Quaternion.Euler ( currentRotation , 180, 90);
+	rigidbody2D.transform.rotation = Quaternion.Euler ( 0 , 180, currentRotation);
 }
