@@ -10,10 +10,9 @@ function Start () {
 
 function Update () {
 	var yVelocity = Input.GetAxis("Vertical")*thrust*Time.deltaTime; 
-	var xVelocity = Input.GetAxis("Horizontal")*thrust*Time.deltaTime; 
 	var rotate:int = Input.GetAxis("Horizontal")*rotate*Time.deltaTime;
 	
-	var speed:Vector3 = new Vector3(xVelocity,yVelocity,0)*-1;
+	var speed:Vector3 = new Vector3(yVelocity,yVelocity,yVelocity);
 	
 	speed =  transform.rotation * speed;
 	Debug.Log(speed);
