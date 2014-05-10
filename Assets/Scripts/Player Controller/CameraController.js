@@ -1,9 +1,7 @@
 ﻿#pragma strict
 
-function Start () {
+var ship : GameObject;
 
-}
-
-function Update () {
-
+void Update() {
+	Transform.position = ship.transform.position;
 }
