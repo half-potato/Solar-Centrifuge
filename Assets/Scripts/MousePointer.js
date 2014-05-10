@@ -1,8 +1,9 @@
 ﻿#pragma strict
 
-public var thrust = 1000;
+public var thrust : int;
 var rotate = 100;
 var currentRotation:float;
+var speed : int;
 
 function Start () {
 	currentRotation = 90;
@@ -10,6 +11,7 @@ function Start () {
 
 function Update () {
 	var yVelocity = Input.GetAxis("Vertical")*thrust*Time.deltaTime; 
+	speed = speed + yVelocity;
 	
 	rigidbody2D.AddForce(transform.right * yVelocity);
 	
