@@ -10,11 +10,13 @@ function Start () {
 
 function Update () {
 	var yVelocity = Input.GetAxis("Vertical")*thrust*Time.deltaTime; 
-	var rotate:int = Input.GetAxis("Horizontal")*rotate*Time.deltaTime;
+	var rotatetion:int = Input.GetAxis("Horizontal")*rotate*Time.deltaTime;
 	
-	rigidbody2D.AddForce(transform.forward * yVelocity);
+	Debug.Log(transform.forward * yVelocity);
 	
-	currentRotation+=rotate;
+	rigidbody2D.AddForce(transform.right * yVelocity);
 	
-	rigidbody2D.transform.rotation = Quaternion.Euler ( 0 , 180, currentRotation);
+	currentRotation+=rotatetion;
+	
+	rigidbody2D.transform.rotation = Quaternion.Euler ( 360 , 180, currentRotation);
 }
