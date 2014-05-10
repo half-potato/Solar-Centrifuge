@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\CameraController.js" />
      <Compile Include="Assets\Scripts\FlameCheck.js" />
      <Compile Include="Assets\Scripts\MousePointer.js" />
+     <Compile Include="Assets\Scripts\Planet Gen.js" />
      <Compile Include="Assets\Scripts\Planet.js" />
      <Compile Include="Assets\Scripts\PlanetGravity.js" />
      <Compile Include="Assets\Scripts\PlanetGravityController.js" />
