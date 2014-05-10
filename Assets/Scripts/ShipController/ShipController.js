@@ -10,5 +10,5 @@ function Update () {
 	var yVelocity = Input.GetAxis("Vertical")*thrust*Time.deltaTime; 
 	var xVelocity = Input.GetAxis("Horizontal")*thrust*Time.deltaTime;
 
-	tansform.position.y+=yVelocity;
+	transform.position.y+=yVelocity;
 }

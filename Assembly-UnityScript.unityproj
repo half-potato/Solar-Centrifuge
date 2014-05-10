@@ -47,11 +47,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Player Controller\CameraController.js" />
-<<<<<<< HEAD
      <Compile Include="Assets\Scripts\Player Controller\PlayerController.js" />
-=======
      <Compile Include="Assets\Scripts\ShipController\ShipController.js" />
->>>>>>> FETCH_HEAD
      <Compile Include="Assets\Scripts\World Controller\LevelLoader.js" />
      <Compile Include="Assets\Scripts\World Controller\Planet.js" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
