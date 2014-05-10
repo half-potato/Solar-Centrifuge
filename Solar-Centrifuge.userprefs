@@ -1,9 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player Controller\CameraController.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ShipController\ShipController.js">
     <Files>
       <File FileName="Assets\Scripts\World Controller\Planet.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Player Controller\CameraController.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ShipController\ShipController.js" Line="13" Column="33" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
