@@ -1,10 +1,15 @@
 ﻿#pragma strict
 
+var thruster : GameObject;
 
 var thrust : int;
 var speedCap : float;
 
 var decelerating : int;
+
+var maxTrailSize : float;
+
+var trailSize : float;
 
 function Update () {
 	decelerating == false;
@@ -19,4 +24,6 @@ function Update () {
 	}
 	
 	rigidbody2D.AddForce(transform.right * yVelocity);
+	trailSize = rigidbody2D.velocity.magnitude * maxTrailSize;
+	thruster.particleEmitter.localVelocity = Vector3(-trailSize, 0, 0);
 }
