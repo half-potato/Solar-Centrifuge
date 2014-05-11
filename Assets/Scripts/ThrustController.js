@@ -1,23 +1,21 @@
 ﻿#pragma strict
 
-var thruster : GameObject;
+var forwardThruster:GameObject;
 
 var thrust : int;
 var speedCap : float;
-
-var decelerating : int;
 
 var maxTrailSize : float;
 
 var trailSize : float;
 
 function Update () {
-	decelerating == false;
 	
 	if (Input.GetAxis("Vertical") > 0 && rigidbody2D.velocity.magnitude < speedCap) {
-		decelerating = 0;
 		var yVelocity = Input.GetAxis("Vertical")*thrust*Time.deltaTime;
 	}
+	
+	var xVelocity = Input.GetAxis("Horizontal")*thrust*Time.deltaTime/4;
 	
 	if (rigidbody2D.velocity.magnitude > speedCap) {
 		speedCap = rigidbody2D.velocity.magnitude;
@@ -25,9 +23,10 @@ function Update () {
 	
 	if (this.GetComponent(DeathController).isDead != 1) {
 		rigidbody2D.AddForce(transform.right * yVelocity);
+		rigidbody2D.AddForce(transform.up * xVelocity);
 	} else {
 		this.gameObject.SetActive(false);
 	}
 	trailSize = rigidbody2D.velocity.magnitude * maxTrailSize;
-	thruster.particleEmitter.localVelocity = Vector3(-trailSize, 0, 0);
+	forwardThruster.particleEmitter.localVelocity = Vector3(-trailSize, 0, 0);
 }

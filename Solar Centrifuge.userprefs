@@ -1,8 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Prefabs/MaterialColorRandomizer.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DeathController.js">
     <Files>
-      <File FileName="Assets/Prefabs/MaterialColorRandomizer.js" Line="26" Column="46" />
+      <File FileName="Assets/Scripts/ThrustController.js" Line="29" Column="35" />
+      <File FileName="Assets/Scripts/DeathController.js" Line="9" Column="8" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
