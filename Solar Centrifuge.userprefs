@@ -1,9 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlanetGravityController.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Prefabs/MaterialColorRandomizer.js">
     <Files>
-      <File FileName="Assets/Scripts/PlanetGravityController.js" Line="28" Column="97" />
-      <File FileName="Assets/Scripts/CameraController.js" Line="5" Column="27" />
+      <File FileName="Assets/Prefabs/MaterialColorRandomizer.js" Line="26" Column="46" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

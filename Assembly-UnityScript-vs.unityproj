@@ -46,9 +46,12 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\DeathController.js" />
+     <Compile Include="Assets\Prefabs\MaterialColorRandomizer.js" />
+     <Compile Include="Assets\Scripts\BounceBackArea.js" />
      <Compile Include="Assets\Scripts\CameraController.js" />
+     <Compile Include="Assets\Scripts\DeathController.js" />
      <Compile Include="Assets\Scripts\FlameCheck.js" />
+     <Compile Include="Assets\Scripts\PickupObjectController.js" />
      <Compile Include="Assets\Scripts\Planet Gen.js" />
      <Compile Include="Assets\Scripts\PlanetGravityController.js" />
      <Compile Include="Assets\Scripts\PlayerController.js" />

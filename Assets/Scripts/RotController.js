@@ -19,5 +19,7 @@ function getAngleToMouse ()
 }
 
 function Update () {
-	rigidbody2D.transform.rotation = Quaternion.Euler (0 , 180, getAngleToMouse());
+	if (this.GetComponent(DeathController).isDead != 1) {
+		rigidbody2D.transform.rotation = Quaternion.Euler (0 , 180, getAngleToMouse());
+	}
 }

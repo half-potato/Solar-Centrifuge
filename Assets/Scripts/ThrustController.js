@@ -23,7 +23,11 @@ function Update () {
 		speedCap = rigidbody2D.velocity.magnitude;
 	}
 	
-	rigidbody2D.AddForce(transform.right * yVelocity);
+	if (this.GetComponent(DeathController).isDead != 1) {
+		rigidbody2D.AddForce(transform.right * yVelocity);
+	} else {
+		this.gameObject.SetActive(false);
+	}
 	trailSize = rigidbody2D.velocity.magnitude * maxTrailSize;
 	thruster.particleEmitter.localVelocity = Vector3(-trailSize, 0, 0);
 }
