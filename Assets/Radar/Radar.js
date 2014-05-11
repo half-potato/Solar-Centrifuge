@@ -19,8 +19,8 @@ var enemyTag = "Enemy";
 enum radarLocationValues {topLeft, topCenter, topRight, middleLeft, middleCenter, middleRight, bottomLeft, bottomCenter, bottomRight, custom}
 var radarLocation : radarLocationValues = radarLocationValues.bottomLeft;
 
-private var mapWidth : float;
-private var mapHeight : float;
+public var mapWidth : float;
+public var mapHeight : float;
 private var mapCenter : Vector2;
 var mapCenterCustom : Vector2;
 
