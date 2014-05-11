@@ -8,6 +8,7 @@ var gravityReach : int;
 var quadrant : int;
 var distance : int;
 var previousDistance : int;
+var escapeVelocity : int;
 
 function isNegative(number : int) {
 	if ( Mathf.Ceil(number) / (Mathf.Abs(Mathf.Ceil(number))) == -1) {
@@ -24,13 +25,8 @@ function truncate(number) {
 function Update () {
 	previousDistance = distance;
 	distance = Vector2.Distance(ship.transform.position, transform.position);
-	if (distance <= gravityReach) {
-		if (previousDistance < distance) {
-			gravityDirection = transform.position - ship.transform.position;
-			ship.rigidbody2D.AddForce(gravityDirection.normalized * (1.0 - distance / gravityReach * 2) * gravityStrength / 2);
-		} else {
-			gravityDirection = transform.position - ship.transform.position;
-			ship.rigidbody2D.AddForce(gravityDirection.normalized * (1.0 - distance / gravityReach * 2) * gravityStrength * 2);
-		}
+	if (((1 - distance / gravityReach) > 0) && ship.rigidbody2D.velocity.magnitude < escapeVelocity) {
+		gravityDirection = transform.position - ship.transform.position;
+		ship.rigidbody2D.AddForceAtPosition(gravityDirection.normalized * (1.0 - distance / gravityReach * 2) * gravityStrength * 2, transform.position);
 	}
 }
