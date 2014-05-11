@@ -4,7 +4,7 @@ var cameraa : Camera;
 var middlePoint : Vector2;
 
 function OnValidate () {
-	middlePoint = cameraa.WorldToScreenPoint(transform.position);
+	middlePoint = cameraa.WorldToScreenPoint(Vector3(0, 0, 0));
 	middlePoint.y = -middlePoint.y;
 }
 
@@ -19,7 +19,7 @@ function getAngleToMouse ()
 }
 
 function Update () {
-	if (this.GetComponent(DeathController).isDead != 1) {
+	if (cameraa.GetComponent(CameraController).freezeGame != 1) {
 		rigidbody2D.transform.rotation = Quaternion.Euler (0 , 180, getAngleToMouse());
 	}
 }
