@@ -1,8 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GameAreaController.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Triggers/DeathTrigger.js">
     <Files>
-      <File FileName="Assets/GameAreaController.js" Line="10" Column="2" />
+      <File FileName="Assets/Scripts/Triggers/DeathTrigger.js" Line="6" Column="43" />
+      <File FileName="Assets/Scripts/Triggers/GameAreaController.js" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Player Controllers/CameraController.js" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Player Controllers/RotController.js" Line="4" Column="27" />
+      <File FileName="Assets/Scripts/Triggers/WinningTrigger.js" Line="5" Column="21" />
+      <File FileName="Assets/Scripts/MainMenuGui.js" Line="18" Column="96" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

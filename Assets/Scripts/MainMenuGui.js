@@ -14,6 +14,6 @@ function Update () {
 
 function OnGUI () {
 	GUI.skin = skingui;
-	GUI.Box(Rect(Screen.width/2 - titleSize.x/2, Screen.height/4 - titleSize.y/2, titleSize.x, titleSize.y), "Planetary Centrifuge");
-	GUI.Box(Rect(Screen.width/2 - titleSize.x/2, Screen.height - titleSize.y/1.5, titleSize.x, titleSize.y), "Press Space to Play");
+	GUI.Box(Rect(Screen.width/2 - titleSize.x/2, Screen.height/2 - titleSize.y/2, titleSize.x, titleSize.y), "Planetary Centrifuge");
+	GUI.Box(Rect(Screen.width/2 - titleSize.x/2, Screen.height - titleSize.y/1.5 - Screen.height/6, titleSize.x, titleSize.y), "Press Space to Play");
 }
